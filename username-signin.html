@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/about (2).png" type="image/x-icon">
+  <link rel="stylesheet" href="fichiers/css/uikit.min.css">
+  <link rel="stylesheet" href="fichiers/style.css">
+  <link rel="stylesheet" href="fichiers/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  <script src="https://kit.fontawesome.com/1a90b9fe9a.js" crossorigin="anonymous"></script>
+
+  <title>Sign In</title>
+</head>
+
+<body class="signup-body">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg shadow-lg px-5">
+          <div class="container-fluid">
+            <span class="navbar-toggler-icon" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+
+              <!-- SUR LES GRANDS ECRANS -->
+              <div class="text-center d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                <div class="d-flex">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback" style="margin-left: 20px!important;"></span>
+                    <input type="text" class="form-control nav-search " placeholder="Search...">
+                  </div>
+
+                  <div class="btn-group dropdown">
+                    <span class="btn-transparent dropdown-toggle nav-dropdown search" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <!-- Dropdown button -->
+                      <img src="img/user.png" style="width:30px;height: 30px;" alt="" srcset="">
+                    </span>
+                    <ul class="dropdown-menu login--dropdown text-center">
+                      <li><a class="dropdown-item active mb-2 bg-blue" href="#" data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</a></li>
+                      <li>New visitor? <a class="" href="#">Start here</a> </li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group dropdown">
+                    <div class="btn-transparent dropdown-toggle nav-dropdown" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span>EN</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4">
+                        <div class="dropdown-menu bg-transparent menu-nav-dropdown"
+                          style="width:10px!important;border:none;">
+                          <li class=""> <span> <a class="" href="#">FR</a></span></li>
+                          <li class="mt-1"> <span> <a class="" href="#">ESP</a></span></li>
+                        </div>
+                      </div>
+                      <div class="col-4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SUR LES GRANDS ECRANS -->
+              <div class="text-center d-md-none d-sm-block d-xs-block">
+                <div class="mt-5">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback" style="margin-left: 20px!important;"></span>
+                    <input type="text" class="form-control nav-search " placeholder="Search...">
+                  </div>
+                  <br>
+
+                  <div class="nav-blok2">
+                    <div class="btn-group dropdown">
+                      <span class="btn-transparent dropdown-toggle nav-dropdown search" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- Dropdown button -->
+                        <img src="img/user.png" style="width:30px;height: 30px;" alt="" srcset="">
+                      </span>
+                      <ul class="dropdown-menu login--dropdown text-center">
+                        <li><a class="dropdown-item active mb-2" href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</a></li>
+                        <li>New visitor? <a class="" href="#">Start here</a> </li>
+                      </ul>
+                    </div>
+
+                    <div class="btn-group dropdown">
+                      <div class="btn-transparent dropdown-toggle nav-dropdown" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span>EN</span>
+                      </div>
+                      <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                          <div class="dropdown-menu bg-transparent menu-nav-dropdown"
+                            style="width:10px!important;border:none;">
+                            <li class=""> <span> <a class="" href="#">FR</a></span></li>
+                            <li class="mt-1"> <span> <a class="" href="#">ESP</a></span></li>
+                          </div>
+                        </div>
+                        <div class="col-4"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- OFFCANVAS LOGIN SECTION -->
+
+      <div class="offcanvas offcanvas-end px-0 m-0 offcanvas-login" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header-login">
+          <div class="d-flex" style="justify-content: space-between;">
+            <h3 class="user-hello">Hello </h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="row">
+            <div class="col-12 user-info">
+              <img src="img/user-loged.png" class="user-loged" alt="" srcset=""> <span>Pascal Jerome</span>
+            </div>
+          </div>
+        </div>
+        <ul class="list-group" style="border-radius:0px">
+          <a class="list-group-item text-center btn account-setting">Account Settings</a>
+        </ul>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Your Lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Borrowings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Orders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Rentals</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find a Deal</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-ul-logout">
+            <hr class="user-accout-hr">
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Create Your Own Tools Site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create a Partner Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hire a Professional To Edit & Set up Your Tool Cart</a>
+            </li>
+            <hr class="user-accout-hr">
+
+            <div class="log-footer">
+              <a class="text-center btn user-logout">Sign off</a>
+            </div>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- OFFCANVAS HOME SECTION -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+          <button type="button" class="btn-close float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"><img src="img/home.png" alt=""> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/about (2).png" alt="" srcset="">About this site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/borrow.png" alt="" srcset="">Borrow a tool</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/contact.png" alt="" srcset="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/lost.png" alt="" srcset="">Lost and Found</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/return.png" alt="" srcset="">Return a tool</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img
+                  src="img/items.png" alt="" srcset="">Items rental</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rent an item</a></li>
+                <li><a class="dropdown-item" href="#">Return an item</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/switch.png" alt="" srcset="">Switch sites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/tool.png" alt="" srcset="">Tool deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/view.png" alt="" srcset="">View all tools</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/share.png" alt="" srcset="">Share This Web App </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/alltoo.png" alt="" srcset="">Set up your Tool Site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/tool.png" alt="" srcset="">Tool market place</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/alltoo.png" alt="" srcset="">alltoolmanager.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <main id="main-signup">
+      <div class="row">
+        <div class="col-md-6 col1-signup">
+          <h3 class="signup-sous-title">Secure login to your account</h3>
+          <img src="img/man-sign-up.png" class="man-signup img-fluid" alt="" srcset="">
+        </div>
+        <div class="col-md-6">
+          <div class="container">
+            <div class="col-md-10">
+              <form id="login-form" class="animate__animated animate__fadeInDown">
+                <h3 class="">Sign in</h3>
+                <li>New user? <a href=""> Create an account to get started</a></li>
+
+                <div class="form-body">
+                  <!-- <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-floating mb-3">
+                        <input type="email" disabled class="form-control floatingInput" id="floatingInput"
+                          placeholder="name@example.com">
+                        <label for="floatingInput">Enter your email address</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row my-3">
+                    <div class="col-md-5">
+                      <div class="form-floating mb-3">
+                        <input type="password" disabled class="form-control floatingInput inputEyeId1" id="floatingInput">
+                        <i class="bi bi-eye-fill" id="togglePassword1"></i>
+                        <label for="floatingInput">Enter your password </label>
+                      </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                      <p class="label-or mt-4">Or</p>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="form-floating mb-3">
+                        <input type="password" disabled class="form-control floatingInput inputEyeId2" id="floatingInput">
+                        <i class="bi bi-eye-fill" id="togglePassword2"></i>
+                        <label for="floatingInput">Enter your login pin </label>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="check-section">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Stay signed in</label>
+                    </div>
+                    <button class="btn signin-btn">Sign in</button>
+                  </div>
+
+                  <div class="row my-3">
+                    <div class="col-md-5">
+                      <hr class="signin-hr">
+                    </div>
+                    <div class="col-md-2">
+                      <p class="label-or mt-2">Or</p>
+                    </div>
+                    <div class="col-md-5">
+
+                      <hr class="signin-hr">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <label for="" class="username-login">Enter your name or username </label>
+                    <div class="col-md-12 mb-3">
+                      <input type="text" name="" class="form-control username-login" placeholder="Example: JohnBelgrant"
+                        id="">
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label for="" class="username-login">Enter your password or login pin</label>
+                    <div class="col-md-12 ">
+                      <input type="password" name="" class="form-control username-login inputEyeId3" placeholder="Example: °°°°°°°°°° " >
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="auther-links">Reset your password</a>
+                <a href="" class="auther-links">Get some help </a>
+
+              </form>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="row">
+      <div class="col-md-12" id="footer">
+        <p class="footer-text">© TOOL CART-2022</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="fichiers/style.js"></script>
+  <script src="fichiers/popper.min.js"></script>
+  <script src="fichiers/bootstrap.min.js"></script>
+  <script src="fichiers/js/uikit.min.js"></script>
+</body>
+
+</html>

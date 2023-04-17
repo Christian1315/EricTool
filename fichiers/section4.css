@@ -1,0 +1,126 @@
+* {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+#section4 {
+    padding: 50px;
+}
+
+#section4 .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section4 .header .list--friend {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#section4 .header .links>a {
+    /* margin-right: 20px; */
+}
+
+#section4 .header .links a {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-decoration: none;
+    color: #2A7FB8;
+}
+
+#section4 #nav-tab {
+    border-bottom: none !important;
+}
+
+#section4 .header--description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(52, 51, 49, 0.7);
+    margin-block: 30px;
+}
+
+#section4 .this--week--contain {
+    border-bottom: 5px solid rgba(52, 51, 49, 0.35);
+    padding-bottom: 10px;
+}
+
+#section4 .this--week--contain .this--week {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 .this--week--contain,
+#section4 .this--week--contain .round {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section4 .this--week--contain .clear--list img {
+    width: 24px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+#section4 .this--week--contain .clear--list {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: right;
+    color: #2A7FB8;
+    margin-left: 10px;
+}
+
+#section4 .section4--love {
+    position: absolute;
+    margin-top: -50px;
+}
+
+#section4 .card .section4--modal--title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #2A7FB8;
+}
+
+#section4 .card .list-group {
+    padding: 0 !important;
+    border-color: none !important;
+}
+
+#section4 .card .list-group a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: rgba(52, 51, 49, 0.7);
+    text-decoration: none;
+}
+
+#section4 .borrow--button {
+    background: #EBEBE4;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #2A7FB8;
+    padding: 10px 30px;
+    margin-top: 10px;
+}

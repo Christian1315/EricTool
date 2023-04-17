@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/about (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="fichiers/css/uikit.min.css">
+    <link rel="stylesheet" href="fichiers/style.css">
+    <link rel="stylesheet" href="fichiers/style2.css">
+    <link rel="stylesheet" href="fichiers/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      />
+
+    <!-- <link rel="stylesheet" href="font/fontawesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/1a90b9fe9a.js"
+      crossorigin="anonymous"></script>
+
+    <title>Tool Cart</title>
+  </head>
+
+  <body class="home-body">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg shadow-lg px-5">
+            <div class="container-fluid">
+              <span class="navbar-toggler-icon" type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"></span>
+              <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+
+                <!-- SUR LES GRANDS ECRANS -->
+                <div class="text-center d-none d-xs-none d-sm-none d-md-block
+                  d-lg-block">
+                  <div class="d-flex">
+                    <div class="form-group has-search">
+                      <span class="fa fa-search form-control-feedback"
+                        style="margin-left: 20px!important;"></span>
+                      <input type="text" class="form-control nav-search "
+                        placeholder="Search...">
+                    </div>
+
+                    <div class="btn-group dropdown">
+                      <span class="btn-transparent dropdown-toggle nav-dropdown
+                        search" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- Dropdown button -->
+                        <img src="img/user.png" style="width:30px;height: 30px;"
+                          alt="" srcset="">
+                      </span>
+                      <ul class="dropdown-menu login--dropdown text-center">
+                        <li><a class="dropdown-item active mb-2 bg-blue"
+                            href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Sign in</a></li>
+                        <li>New visitor? <a class="" href="#">Start here</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="btn-group dropdown">
+                      <div class="btn-transparent dropdown-toggle nav-dropdown"
+                        type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span>EN</span>
+                      </div>
+                      <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                          <div class="dropdown-menu bg-transparent
+                            menu-nav-dropdown"
+                            style="width:10px!important;border:none;">
+                            <li class=""> <span> <a class="" href="#">FR</a></span></li>
+                            <li class="mt-1"> <span> <a class="" href="#">ESP</a></span></li>
+                          </div>
+                        </div>
+                        <div class="col-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SUR LES GRANDS ECRANS -->
+                <div class="text-center d-md-none d-sm-block d-xs-block">
+                  <div class="mt-5">
+                    <div class="form-group has-search">
+                      <span class="fa fa-search form-control-feedback"
+                        style="margin-left: 20px!important;"></span>
+                      <input type="text" class="form-control nav-search "
+                        placeholder="Search...">
+                    </div>
+                    <br>
+
+                    <div class="nav-blok2">
+                      <div class="btn-group dropdown">
+                        <span class="btn-transparent dropdown-toggle
+                          nav-dropdown search" type="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <!-- Dropdown button -->
+                          <img src="img/user.png" style="width:30px;height:
+                            30px;" alt="" srcset="">
+                        </span>
+                        <ul class="dropdown-menu login--dropdown text-center">
+                          <li><a class="dropdown-item active mb-2" href="#"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasRight"
+                              aria-controls="offcanvasRight">Sign in</a></li>
+                          <li>New visitor? <a class="" href="#">Start here</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="btn-group dropdown">
+                        <div class="btn-transparent dropdown-toggle
+                          nav-dropdown" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <span>EN</span>
+                        </div>
+                        <div class="row">
+                          <div class="col-4"></div>
+                          <div class="col-4">
+                            <div class="dropdown-menu bg-transparent
+                              menu-nav-dropdown"
+                              style="width:10px!important;border:none;">
+                              <li class=""> <span> <a class="" href="#">FR</a></span></li>
+                              <li class="mt-1"> <span> <a class="" href="#">ESP</a></span></li>
+                            </div>
+                          </div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- OFFCANVAS LOGIN SECTION -->
+
+        <div class="offcanvas offcanvas-end px-0 m-0 offcanvas-login"
+          tabindex="-1" id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel">
+
+          <div class="offcanvas-header-login">
+            <div class="d-flex" style="justify-content: space-between;">
+              <h3 class="user-hello">Hello </h3>
+              <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="row">
+              <div class="col-12 user-info">
+                <img src="img/user-loged.png" class="user-loged" alt=""
+                  srcset=""> <span>Pascal Jerome</span>
+              </div>
+            </div>
+          </div>
+          <ul class="list-group" style="border-radius:0px">
+            <a class="list-group-item text-center btn account-setting">Account
+              Settings</a>
+          </ul>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Your Lists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Borrowings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Orders</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Rentals</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find a Deal</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-ul-logout">
+              <hr class="user-accout-hr">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Create Your Own
+                  Tools Site</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Create a Partner Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hire a Professional To Edit & Set
+                  up Your Tool Cart</a>
+              </li>
+              <hr class="user-accout-hr">
+
+              <div class="log-footer">
+                <a class="text-center btn user-logout">Sign off</a>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- OFFCANVAS HOME SECTION -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true"
+          data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+            <button type="button" class="btn-close float-end"
+              data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"><img src="img/home.png" alt=""> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/about (2).png" alt=""
+                    srcset="">About this site</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/borrow.png" alt=""
+                    srcset="">Borrow a tool</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/contact.png" alt=""
+                    srcset="">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/lost.png" alt=""
+                    srcset="">Lost and Found</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/return.png" alt=""
+                    srcset="">Return a tool</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false" href="#"><img
+                    src="img/items.png" alt="" srcset="">Items rental</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Rent an item</a></li>
+                  <li><a class="dropdown-item" href="#">Return an item</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/switch.png" alt=""
+                    srcset="">Switch sites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/tool.png" alt=""
+                    srcset="">Tool deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/view.png" alt=""
+                    srcset="">View all tools</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-ul">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/share.png" alt=""
+                    srcset="">Share This Web App </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/alltoo.png" alt=""
+                    srcset="">Set up your Tool Site</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/tool.png" alt=""
+                    srcset="">Tool market place</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/alltoo.png" alt=""
+                    srcset="">alltoolmanager.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- GLOBAL MODAL -->
+      <div class="custom--modal p-5">
+        <div class="modal-dialog--custom">
+          <div class="modal-content bg-gry faq--section">
+            <div class="modal-body p-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="logo--title">
+                    <img class="img-fluid" src="img/section3/toolscart 1.png" alt=""> <span>Eric
+                      Tool</span>
+                  </h3>
+                  <h1 class="title">Frequently Asked Questions</h1>
+                  <p class="description">Check out the most commonly asked set
+                    of
+                    questions in the regard of how to borrow or rent the
+                    valuable
+                    work tools from this listing inventory on hand from this
+                    tool
+                    cart.
+                  </p>
+
+                  <!-- FAQS -->
+                  <div class="accordion" id="faq--accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne">
+                          How can I borrow a tool ?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#faq--accordion">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong>
+                          It is shown by default, until the collapse plugin adds
+                          the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          How can I return all the tools I have borrowed ?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree">
+                          Where do I find all my borrowings ?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false"
+                          aria-controls="collapseFour">
+                          Is it possible to rent a tool from this cart ?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive" aria-expanded="false"
+                          aria-controls="collapseFive">
+                          Is it possible to rent a tool from this cart ?
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix" aria-expanded="false"
+                          aria-controls="collapseSix">
+                          Can I share my wish list with a friend ?
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSeven" aria-expanded="false"
+                          aria-controls="collapseSeven">
+                          Where do I find all the tools on sales ?
+                        </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseHeight" aria-expanded="false"
+                          aria-controls="collapseHeight">
+                          Do I need to prove my returns with a supporting photo
+                          ?
+                        </button>
+                      </h2>
+                      <div id="collapseHeight" class="accordion-collapse
+                        collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong>
+                          It is hidden by default, until the collapse plugin
+                          adds the appropriate classes that we use to style each
+                          element. These classes control the overall appearance,
+                          as well as the showing and hiding via CSS transitions.
+                          You can modify any of this with custom CSS or
+                          overriding our default variables. It's also worth
+                          noting that just about any HTML can go within the
+                          <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END FAQs -->
+                  <div class="faq--buttons">
+                    <button class="btn btn1 mt-2">PAY TO REPLACE</button>
+                    <button class="btn btn2 mt-2">Still want to contact?</button>
+                  </div>
+                  <p class="footer--title">Let get connected on your favorite
+                    social media platforms</p>
+
+                  <div class="socials--medias">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img class="" src="img/section3/facebook.png" alt=""
+                              srcset="">
+                          </a> <br>
+                          <span>Facebook</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img src="img/section3/linkedin.png" alt=""
+                              srcset="">
+                          </a> <br>
+                          <span>LinkedIn</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img src="img/section3/instagram.png" alt=""
+                              srcset="">
+                          </a> <br>
+                          <span>Instagram</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img src="img/section3/tiktok.png" alt="" srcset="">
+                          </a> <br>
+                          <span>TikTok</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img src="img/section3/twitter.png" alt=""
+                              srcset="">
+                          </a> <br>
+                          <span>Twitter</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-4 col-6">
+                        <div class="media">
+                          <a href="" class="">
+                            <img src="img/section3/youtube.png" alt=""
+                              srcset="">
+                          </a> <br>
+                          <span>Youtube</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 faq--column2 p-3">
+                  <h3 class="links">
+                    <a href="" class="">Find a deal</a> | <a href="" class="">Contact</a>
+                  </h3>
+                  <div class="text-center">
+                    <img class="text-center" src="img/section3/faq-avatar.png"
+                      alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main id="main">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="home-sous-title">ERIC DOKO’s</h3>
+            <h1 class="home-title animate__animated animate__fadeInDown">TOOL
+              CART</h1>
+
+            <p class="home-description">I have the privilege of lending you my
+              valuable work tools. Nonetheless, I ask
+              you
+              to kindly return each tool you take from my trolley, as I may need
+              it for my next job. Thank you for your
+              understanding.</p>
+
+            <div class="actions-buttons">
+              <button class="btn btn-sm action action1 mt-2 animate__animated
+                animate__fadeInLeft">RETURN A
+                TOOL</button>
+              <button class="btn btn-sm action action2 mt-2 animate__animated
+                animate__fadeInRight">BORROW A
+                TOOL</button>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+
+
+      </main>
+
+      <div class="row shadow-lg">
+        <div class="col-md-12" id="footer">
+          <p class="footer-text">© TOOL CART-2022</p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="fichiers/style.js"></script>
+    <script src="fichiers/popper.min.js"></script>
+    <script src="fichiers/bootstrap.min.js"></script>
+    <script src="fichiers/js/uikit.min.js"></script>
+    <!-- <script src="font/fontawesome.min.js"></script> -->
+  </body>
+
+</html>
