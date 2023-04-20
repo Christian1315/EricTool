@@ -14,10 +14,10 @@
 
     <link rel="stylesheet" href="../fichiers/bootstrap.min.css">
     <link rel="stylesheet"
-      href="../https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
     <link rel="stylesheet"
-      href="../https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
       />
 
     <script src="https://kit.fontawesome.com/1a90b9fe9a.js"
@@ -315,7 +315,9 @@
               <span class="list--friend">List & Friends</span>
               <span class="links">
                 <a href="" class=""> <img src="../img/section4/all--tool.png"
+                    class="img-fluid"
                     alt="" srcset=""> All Tools</a> | <a href="" class=""> <img
+                    class="img-fluid"
                     src="../img/section4/custom--list.png" alt="" srcset="">
                   Create A Custom List</a>
               </span>
@@ -323,9 +325,9 @@
 
             <p class="header--description">
               Select to see all your viewed lists, wish lists or even request to
-              view your <br>
+              view your
               colleague's wish list so you can help rent or buy a tool for them
-              as a gift or to <br>
+              as a gift or to
               support or thank them.
             </p>
 
@@ -354,34 +356,69 @@
                 <div class="this--week--contain">
                   <span class="this--week">This Week</span>
                   <div class="round">
+                    <img src="../img/section4/share--list.png" class="img1 mx-2"
+                      alt="" srcset="">
+
+                    <span type="button" class="clear--list mx-2"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasBottom"
+                      aria-controls="offcanvasBottom">Share List</span>|
+
                     <img src="../img/section4/clear.png" class="img1 mx-2"
-                      alt="" srcset=""> |
+                      alt="" srcset="">
                     <span class="clear--list">Clear List</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="tab-content" id="nav-tabContent">
 
+            <div class="offcanvas offcanvas-bottom" tabindex="-1"
+              id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Share your
+                  list</h5>
+                <button type="button" class="btn-close"
+                  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small">
+                <p class="description">All guests to your general wish list, or to any
+                  other type of list you have created on the Toolcart, can only
+                  view all items on the list without making changes.
+                </p>
+
+                <ul class="my-3">
+                  <li class="list-group-item"> <img src="../img/section4/akar-icons_copy.png" alt="" srcset=""> An item</li>
+                  <li class="list-group-item"> <img src="../img/section4/fontisto_email.png" alt="" srcset=""> A second item</li>
+                  <li class="list-group-item"> <img src="../img/section4/bi_chat-right-text.png" alt="" srcset=""> A third item</li>
+                </ul>
+
+                <h5 class="offcanvas-title">Share your editable link</h5>
+                <p class="description my-5">Would you like your friends and family to be able to add or remove items from your list? This is also possible. Just copy and share the link below.. </p>
+
+                <button class="btn copy-link">Copy link</button>
+              </div>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
               <!--SINGLE SELECTION -->
               <div class="tab-pane tab-pane-return-process fade show active"
                 id="nav-home" role="tabpanel"
                 aria-labelledby="nav-home-tab" tabindex="0">
 
                 <!--RETURN DETAIL MODAL COLLAPSE -->
-                <div class="modal fade" id="staticBackdrop"
-                  data-bs-backdrop="static" data-bs-keyboard="false"
-                  tabindex="-1" aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
+                <div class="modal fade" id="staticBackdrop" tabindex="-1"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
                     <div class="modal-content">
-                      <div class="card card-body collapse--body">
-                        <button type="button" class="btn--close"
-                          data-bs-dismiss="modal" aria-label="Close"><i
-                            class="bi bi-x-circle bg-danger"></i></button>
-                        <h1 class="section4--modal--title">Item Actions</h1>
-                        <ul class="list-group">
+                      <div class="header--modal">
+                        <h1 class="modal-title fs-5 section4--modal--title
+                          text-center" data-bs-dismiss="modal"
+                          aria-label="Close">Item Actions <i class="bi
+                            bi-x-circle text-end"></i></h1>
+                      </div>
+                      <div class="modal-body px-0 mx-0">
+                        <ul class="px-0 mx-0">
                           <li class="list-group-item">
                             <a href="" class="">Move</a>
                           </li>
@@ -415,7 +452,10 @@
                       <div class="card-body">
                         <img src="../img/section4/love.png"
                           class="section4--love" alt="" srcset="">
-                        <h5 class="card-title">Socket</h5>
+                        <h5 class="card-title">
+                          <span class="">Socket</span>
+                          <span class="dot">...</span>
+                        </h5>
                         <p class="card-text">
                           15 mm Metric Socket <br>
                           <span>In Stock |</span> <img
@@ -464,7 +504,10 @@
                       <div class="card-body">
                         <img src="../img/section4/love.png"
                           class="section4--love" alt="" srcset="">
-                        <h5 class="card-title">Socket</h5>
+                        <h5 class="card-title">
+                          <span class="">Socket</span>
+                          <span class="dot">...</span>
+                        </h5>
                         <p class="card-text">
                           15 mm Metric Socket <br>
                           <span>In Stock |</span> <img
@@ -512,7 +555,10 @@
                       <div class="card-body">
                         <img src="../img/section4/love.png"
                           class="section4--love" alt="" srcset="">
-                        <h5 class="card-title">Socket</h5>
+                        <h5 class="card-title">
+                          <span class="">Socket</span>
+                          <span class="dot">...</span>
+                        </h5>
                         <p class="card-text">
                           15 mm Metric Socket <br>
                           <span>In Stock |</span> <img
@@ -560,7 +606,10 @@
                       <div class="card-body">
                         <img src="../img/section4/love.png"
                           class="section4--love" alt="" srcset="">
-                        <h5 class="card-title">Socket</h5>
+                        <h5 class="card-title">
+                          <span class="">Socket</span>
+                          <span class="dot">...</span>
+                        </h5>
                         <p class="card-text">
                           15 mm Metric Socket <br>
                           <span>In Stock |</span> <img
@@ -598,39 +647,157 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <!-- ==== Tab pane footer === -->
-                <div class="row tab-tape-footer">
-                  <div class="col-md-12">
-                    <span>Yesterday</span>
-
-                    <div class="row">
-                      <div class="col-md-4 column1">
-                        <img src="img/section3/footer--img.png" class="" alt=""
-                          srcset="">
-                      </div>
-                      <div class="col-md-8 column2">
-                        <h1 class="welcome">WELL DONE !</h1>
-
-                        <p class="footer--text">There is nothing to show for
-                          this date. Keep it up. </p>
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
+              <!--END SINGLE SELECTION -->
 
+              <!-- Recently Viewed -->
               <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                 aria-labelledby="nav-profile-tab"
                 tabindex="0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="block1">
+                      <div class="block">
+                        <h1 class="title">GENERAL WISH LIST</h1>
+                        <button class="btn single">Share List</button>
+                      </div>
+                    </div>
 
+                    <div class="block2">
+                      <div class="block">
+                        <h1 class="title">BODY WORK LIST</h1>
+                        <div class="buttons">
+                          <button class="btn mx-1">Share List</button>
+                          <button class="btn mx-1">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="block3">
+                      <div class="block">
+                        <img src="../img/section4/add.png" class="img-fluid"
+                          alt="" srcset="">
+                        <h1 class="title block--title">CREATE A NEW LIST</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+              </div>
+              <!--End Recently Viewed -->
+
+              <!-- Your Friend’s List -->
+
+              <div class="modal fade" id="PERMISSION" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="title">
+                        <strong class="text-dark">Request Message.</strong>
+                        <span> Make your message
+                          personal by replacing ‘’Bruce’’ & ‘‘Jacques Belgrant’’
+                          with the receiver’s & your name
+                        </span>
+                      </p>
+                      <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="body">
+                        <p class="">
+                          Hi Bruce, <br>
+                          I was wondering if you had built a list on
+                          ToolManager. I'd love to take a look at it to see what
+                          you really need. <br>
+                          Could you please share your list with me?
+                          Thank you! <br> <br>
+
+                          Jacques Belgrant
+                        </p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn edit">Edit</button>
+                      <div class="permission--buttons">
+                        <button class="btn copy-message mx-2">Copy Message</button>|
+                        <button class="btn email-message mx-2">Email Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade friend--panel" id="nav-list"
+                role="tabpanel"
+                aria-labelledby="nav-list-tab"
+                tabindex="0">
+
+                <div class="row body">
+                  <div class="col-md-12">
+                    <h3 class="title">You don't have any lists shared with
+                      your
+                      friends yet. </h3>
+                    <p class="description">Ask a friend and colleague to share
+                      their
+                      ToolManager wish list with you. </p>
+
+                    <div class="text-center">
+                      <button class="btn text-center" data-bs-toggle="modal"
+                        data-bs-target="#PERMISSION">REQUEST PERMISSION TO
+                        VIEW</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 class="title">Find the perfect tool from your lists</h3>
+                      <p class="description">Stay organized to quickly find
+                        all
+                        the tools you want, whether you're a painter, body
+                        shop
+                        technician, general mechanic, carpenter or anyone else
+                        who
+                        works with tools.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="block1">
+                        <div class="block">
+                          <button class="btn">GENERAL WISH LIST</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 _2">
+                      <div class="block2">
+                        <div class="block">
+                          <button class="btn">GENERAL WISH LIST</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="block3">
+                        <div class="block">
+                          <img src="../img/section4/add.png" class="img-fluid"
+                            alt="" srcset="">
+                          <h1 class="title block--title">CREATE A NEW LIST</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!--END SINGLE SELECTION -->
-
+            <!--End Your Friend’s List -->
           </div>
         </div>
       </main>

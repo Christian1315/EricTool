@@ -6193,7 +6193,7 @@ fieldset:disabled .btn {
 
     .modal-lg,
     .modal-xl {
-        --bs-modal-width: 800px
+        --bs-modal-width: 1000px
     }
 }
 
@@ -7516,6 +7516,7 @@ fieldset:disabled .btn {
     right: 0;
     left: 0;
     height: var(--bs-offcanvas-height);
+    height: 300px;
     max-height: 100%;
     border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
     transform: translateY(100%)

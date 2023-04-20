@@ -21,10 +21,6 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-#section4 .header .links>a {
-    /* margin-right: 20px; */
-}
-
 #section4 .header .links a {
     margin: 20px;
     font-weight: 500;
@@ -89,28 +85,50 @@
     margin-top: -50px;
 }
 
-#section4 .card .section4--modal--title {
+#section4 .section4--modal--title {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     align-items: center;
-    text-align: center;
+    text-align: center !important;
     color: #2A7FB8;
 }
 
-#section4 .card .list-group {
-    padding: 0 !important;
+#section4 .section4--modal--title>i {
+    position: absolute;
+    right: 3px;
+    text-align: end !important;
+    color: #000;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.header--modal {
+    padding-block: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, .15);
+}
+
+#section4 .modal-body ul {
+    padding: 0px !important;
+    margin: 0px !important;
     border-color: none !important;
 }
 
-#section4 .card .list-group a {
+#section4 .modal-body ul li {
+    border-bottom: 2px solid rgba(0, 0, 0, .15);
+    padding-block: 10px;
+    padding-left: 20px;
+}
+
+#section4 .modal-body ul li a {
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     align-items: center;
     color: rgba(52, 51, 49, 0.7);
-    text-decoration: none;
 }
+
 
 #section4 .borrow--button {
     background: #EBEBE4;
@@ -123,4 +141,293 @@
     color: #2A7FB8;
     padding: 10px 30px;
     margin-top: 10px;
+}
+
+#section4 .card-title {
+    display: flex;
+    justify-content: space-between;
+    color: #2A7FB8;
+}
+
+#section4 .card-title .dot {
+    color: #2A7FB8;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#section4 .block {
+    padding: 200px 10px 10px 10px;
+    background-color: #2A7FB873;
+    justify-content: center;
+    text-align: center;
+}
+
+#section4 .block .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#section4 .block .single {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #2A7FB8;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 5px 50px 10px 50px;
+}
+
+#section4 .block2 {
+    margin-top: 30px;
+}
+
+#section4 .block2 .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#section4 .block2 .buttons .btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #2A7FB8;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+#section4 .block3 .block--title {
+    margin-top: 73px;
+}
+
+
+#section4 .block1 {
+    background-image: url("../img/section4/general-wish-list.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section4 .block2 {
+    background-image: url("../img/section4/body-work-list.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section4 .block3 {
+    background-image: url("../img/section4/create-new-list.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section4 .friend--panel .body {
+    background-color: rgba(235, 235, 228, 0.3);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#section4 .body .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 .body .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 .body .btn {
+    background: rgba(42, 127, 184, 0.7);
+    border-radius: 10px;
+    color: #fff;
+}
+
+#section4 .friend--panel .block {
+    background-color: transparent !important;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    background-color: rgba(42, 127, 184, 0.4) !important;
+}
+
+#section4 .friend--panel .block2 {
+    margin-top: 0px !important;
+}
+
+#section4 .friend--panel .block3 .block {
+    padding-top: 108px !important;
+    padding-bottom: 10px !important;
+}
+
+#section4 .friend--panel .block3 .block--title {
+    margin-top: 0px !important;
+    color: #fff;
+}
+
+#section4 .friend--panel .block .btn {
+    border-radius: 0px !important;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: rgba(42, 127, 184, 0.8);
+    padding: 10px;
+}
+
+#PERMISSION .title span {
+    font-weight: 20;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#PERMISSION .body {
+    background: #F9F9F7;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+#PERMISSION .modal-header,
+#PERMISSION .modal-footer {
+    border: none !important;
+}
+
+#PERMISSION .modal-footer,
+#PERMISSION .modal-footer .permission--buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#PERMISSION .modal-footer button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#PERMISSION .modal-footer .permission--buttons .email-message {
+    background: rgba(42, 127, 184, 0.45);
+    color: #fff;
+}
+
+#PERMISSION .modal-footer .edit {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: rgba(42, 127, 184, 0.7);
+}
+
+#section4 #offcanvasBottom .offcanvas-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 #offcanvasBottom .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 #offcanvasBottom ul {
+    padding: 0;
+    margin: 0;
+}
+
+#section4 #offcanvasBottom ul li img {
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#section4 #offcanvasBottom ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(52, 51, 49, 0.7);
+}
+
+#section4 #offcanvasBottom .copy-link {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: rgba(52, 51, 49, 0.65);
+    padding: 5px 30px;
+}
+
+@media screen and (max-width: 765px) {
+    #section4 .col-md-4._2 {
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    #section4 .block3 {
+        margin-top: 20px;
+    }
+
+    #section4 .block .single,
+    #section4 .block2 .buttons .btn {
+        padding: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 585px) {
+    #section4 .header {
+        display: list-item;
+        justify-content: center !important;
+        list-style-type: none;
+        text-align: center !important;
+    }
+
+    #section4 .header .list--friend,
+    #section4 .header .links {
+        text-align: center;
+        justify-content: center !important;
+        margin-top: 15px !important;
+    }
+
+    #section4 .header .links a {
+        margin: 5px !important;
+    }
+
+    #section4 .header--description {
+        text-align: center;
+    }
+
+    #section4 .nav-tabs {
+        justify-content: center !important;
+        text-align: center;
+    }
 }
