@@ -5,6 +5,21 @@
     font-family: 'Inter';
 }
 
+nav>.nav-tabs,
+nav>.nav-tabs>.nav-tabs {
+    border: none !important
+}
+
+nav>.nav-tabs .nav-link,nav>.nav-tabs .active {
+    font-weight: 700!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
+}
+
+.navbar.navbar-expand-lg.shadow-lg.px-5>.container-fluid>.navbar-toggler {
+    border: none !important;
+}
+
 .active {
     background: rgba(42, 127, 184, 70%);
     border-radius: 10px;
@@ -1193,21 +1208,21 @@ button.left-column {
     }
 
     .nav-search input {
-        width: 100%!important;
+        width: 100% !important;
     }
 
-    .has-search span{
-        display: none!important;
+    .has-search span {
+        display: none !important;
     }
 
-    .modal-body .nav-tabs{
-        display: inline-flex!important;
+    .modal-body .nav-tabs {
+        display: inline-flex !important;
     }
 }
 
 @media screen and (max-width: 392px) {
-    .modal-body .nav-tabs .nav-link{
+    .modal-body .nav-tabs .nav-link {
         /* display: flex!important; */
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
 }

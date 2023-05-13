@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/about (2).png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="../fichiers/css/uikit.min.css">
+        <link rel="stylesheet" href="../fichiers/style.css">
+        <link rel="stylesheet" href="../fichiers/style2.css">
+        <link rel="stylesheet" href="../fichiers/section4.css">
+        <link rel="stylesheet" href="../fichiers/section9.css">
+        <link rel="stylesheet" href="../fichiers/section10.css">
+        <link rel="stylesheet" href="../fichiers/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+        <script src="https://kit.fontawesome.com/1a90b9fe9a.js"
+            crossorigin="anonymous"></script>
+        <title>Lost And Found List Adding</title>
+    </head>
+
+    <body class="">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12 px-0 mx-0">
+                    <nav class="navbar navbar-expand-lg shadow-lg px-5">
+                        <div class="container-fluid">
+                            <span class="navbar-toggler-icon" type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling"></span>
+                            <span class="navbar-toggler" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </span>
+
+                            <div class="collapse navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                </ul>
+
+                                <!-- SUR LES GRANDS ECRANS -->
+                                <div class="text-center d-none d-xs-none
+                                    d-sm-none d-md-block
+                                    d-lg-block">
+                                    <div class="d-flex">
+                                        <div class="form-group has-search">
+                                            <span class="fa fa-search
+                                                form-control-feedback"
+                                                style="margin-left:
+                                                20px!important;"></span>
+                                            <input type="text"
+                                                class="form-control nav-search "
+                                                placeholder="Search...">
+                                        </div>
+
+                                        <div class="btn-group dropdown">
+                                            <span class="btn-transparent
+                                                dropdown-toggle nav-dropdown
+                                                search" type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <!-- Dropdown button -->
+                                                <img src="../img/user.png"
+                                                    style="width:30px;height:
+                                                    30px;" alt="" srcset="">
+                                            </span>
+                                            <ul class="dropdown-menu
+                                                login--dropdown text-center">
+                                                <li><a class="dropdown-item
+                                                        active mb-2 bg-blue"
+                                                        href="#"
+                                                        data-bs-toggle="offcanvas"
+                                                        data-bs-target="#offcanvasRight"
+                                                        aria-controls="offcanvasRight">Sign
+                                                        in</a></li>
+                                                <li>New visitor? <a class=""
+                                                        href="#">Start here</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="btn-group dropdown">
+                                            <div class="btn-transparent
+                                                dropdown-toggle nav-dropdown"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <span>EN</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4"></div>
+                                                <div class="col-4">
+                                                    <div class="dropdown-menu
+                                                        bg-transparent
+                                                        menu-nav-dropdown"
+                                                        style="width:10px!important;border:none;">
+                                                        <li class=""> <span> <a
+                                                                    class=""
+                                                                    href="#">FR</a></span></li>
+                                                        <li class="mt-1"> <span>
+                                                                <a class=""
+                                                                    href="#">ESP</a></span></li>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SUR LES GRANDS ECRANS -->
+                                <div class="text-center d-md-none d-sm-block d-xs-block">
+                                    <div class="mt-5">
+                                        <div class="form-group has-search">
+                                            <span class="fa fa-search
+                                                form-control-feedback"
+                                                style="margin-left:
+                                                20px!important;"></span>
+                                            <input type="text" class="form-control nav-search " placeholder="Search...">
+                                        </div>
+                                        <br>
+
+                                        <div class="nav-blok2">
+                                            <div class="btn-group dropdown">
+                                                <span class="btn-transparent dropdown-toggle nav-dropdown search" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <!-- Dropdown button -->
+                                                    <img src="../img/user.png"
+                                                        style="width:30px;height:
+                                                        30px;" alt="" srcset="">
+                                                </span>
+                                                <ul class="dropdown-menu
+                                                    login--dropdown
+                                                    text-center">
+                                                    <li><a class="dropdown-item
+                                                            active mb-2"
+                                                            href="#"
+                                                            data-bs-toggle="offcanvas"
+                                                            data-bs-target="#offcanvasRight"
+                                                            aria-controls="offcanvasRight">Sign
+                                                            in</a></li>
+                                                    <li>New visitor? <a class=""
+                                                            href="#">Start here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group dropdown">
+                                                <div class="btn-transparent
+                                                    dropdown-toggle
+                                                    nav-dropdown" type="button"
+                                                    data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <span>EN</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4"></div>
+                                                    <div class="col-4">
+                                                        <div
+                                                            class="dropdown-menu
+                                                            bg-transparent
+                                                            menu-nav-dropdown"
+                                                            style="width:10px!important;border:none;">
+                                                            <li class=""> <span>
+                                                                    <a class=""
+                                                                        href="#">FR</a></span></li>
+                                                            <li class="mt-1">
+                                                                <span> <a
+                                                                        class=""
+                                                                        href="#">ESP</a></span></li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- OFFCANVAS LOGIN SECTION -->
+
+                <div class="offcanvas offcanvas-end px-0 m-0 offcanvas-login"
+                    tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+
+                    <div class="offcanvas-header-login">
+                        <div class="d-flex" style="justify-content:
+                            space-between;">
+                            <h3 class="user-hello">Hello </h3>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 user-info">
+                                <img src="../img/user-loged.png"
+                                    class="user-loged" alt=""
+                                    srcset=""> <span>Pascal Jerome</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group" style="border-radius:0px">
+                        <a class="list-group-item text-center btn
+                            account-setting">Account
+                            Settings</a>
+                    </ul>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="#">Your Lists</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Your Selectings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Your Orders</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Your Rentals</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find a Deal</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0
+                            second-ul-logout">
+                            <hr class="user-accout-hr">
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="#">Create Your Own
+                                    Tools Site</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Create a Partner
+                                    Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hire a Professional
+                                    To Edit & Set
+                                    up Your Tool Cart</a>
+                            </li>
+                            <hr class="user-accout-hr">
+
+                            <div class="log-footer">
+                                <a class="text-center btn user-logout">Sign off</a>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- OFFCANVAS HOME SECTION -->
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true"
+                    data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling"
+                    aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close float-end"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active"><img
+                                        src="../img/home.png" alt="">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/about (2).png"
+                                        alt="" srcset="">About this site</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/Select.png" alt=""
+                                        srcset="">Select a tool</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/contact.png"
+                                        alt="" srcset="">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/lost.png" alt=""
+                                        srcset="">Lost and Found</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/return.png" alt=""
+                                        srcset="">Return a tool</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false" href="#"><img
+                                        src="../img/items.png" alt="" srcset="">Items
+                                    rental</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Rent
+                                            an item</a></li>
+                                    <li><a class="dropdown-item" href="#">Return
+                                            an item</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/switch.png" alt=""
+                                        srcset="">Switch sites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/tool.png" alt=""
+                                        srcset="">Tool deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/view.png" alt=""
+                                        srcset="">View all tools</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-ul">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/share.png" alt=""
+                                        srcset="">Share This Web App </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/alltoo.png" alt=""
+                                        srcset="">Set up your Tool Site</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/tool.png" alt=""
+                                        srcset="">Tool market place</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img
+                                        src="../img/alltoo.png" alt=""
+                                        srcset="">alltoolmanager.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <main id="" class="section9 section10">
+                <div class="row header--section9">
+                    <div class="col-md-12 _head">
+                        <div class="">
+                            <span class="tool--categories">Lost & Found</span>
+                            <p class="header--description my-5">
+                                Lost and found is a great place to post all your
+                                lost items as well as any found items so to <br>
+                                inform your co-workers or friends about it.
+                            </p>
+                        </div>
+                        <div class="img-div">
+                            <img class="img-fluid"
+                                src="../img/section10/undraw_.png" alt=""
+                                srcset="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body--content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h3 class="block-title">Please, help me find my lost items </h3>
+                                <div class="block-content">
+                                    <div class="add--button">
+                                        <div class=""></div>
+                                        <div class="dropdown">
+                                            <img class="dropdown-toggle img-fluid" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="../img/section10/add--icon.png"alt="" srcset="">
+
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Save progress & add another find</a></li>
+                                              <li><a class="dropdown-item _midle" href="#">Post this current find</a></li>
+                                              <li><a class="dropdown-item _midle" href="#">Cancel this post</a></li>
+                                              <li><a class="dropdown-item _midle" href="#">Go to lost items</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                        <div class="retake--picture">
+                                            <button class="btn">
+                                                <span class="_text">
+                                                    <small class="_1">Retake photo</small> |
+                                                    <small class="_2">Save photo</small>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <form>
+                                                    <div class="mb-3">
+                                                        <input type="text"
+                                                            id="disabledTextInput"
+                                                            class="form-control"
+                                                            placeholder="Enter your name here">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text"
+                                                            id="disabledTextInput"
+                                                            class="form-control"
+                                                            placeholder="What item did you find today? ">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text"
+                                                            id="disabledTextInput"
+                                                            class="form-control"
+                                                            placeholder="Where did you find it? ">
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="action--buttons text-center">
+                                                <button class="btn action1">Post my find</button><br>
+                                                <button class="btn action2">Cancel this post</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="yay-block">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="img-fluid"
+                                            src="../img/section10/undraw_ (2).png"
+                                            alt="" srcset="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="text-center mt-3">
+                                            <img class="img-fluid" src="../img/section10/YAY!.png">
+                                        </div>
+                                        <p class="para-yay">Super thank you, Jackson for this find! You are my hero. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+
+                    <div class="bottom-block">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- NAVBAR -->
+                                <nav>
+                                    <div class="nav nav-tabs search_and_cart"
+                                        id="nav-tab" role="tablist">
+                                        <div class="__buttons nav nav-tabs">
+                                            <button class="nav-link active"
+                                                id="nav-home-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#nav-home"
+                                                type="button" role="tab"
+                                                aria-controls="nav-home"
+                                                aria-selected="true">Found items</button>
+                                            <button class="nav-link"
+                                                id="nav-profile-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#nav-profile"
+                                                type="button" role="tab"
+                                                aria-controls="nav-profile"
+                                                aria-selected="false">Lost items</button>
+                                        </div>
+                                        <div class="form-group has-search">
+                                            <span class="fa fa-search
+                                                form-control-feedback"
+                                                style="margin-left:
+                                                20px!important;"></span>
+                                            <input type="text"
+                                                class="form-control
+                                                nav-search "
+                                                placeholder="Search for any lost
+                                                or found items here...">
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!--END NAVBAR -->
+
+
+                                <div class="tab-content my-3"
+                                    id="nav-tabContent">
+                                    <!--SINGLE SELECTION -->
+                                    <div class="tab-pane tab-pane-item-display
+                                        fade show active" id="nav-home"
+                                        role="tabpanel"
+                                        aria-labelledby="nav-home-tab"
+                                        tabindex="0">
+                                        <div class="row mt-3">
+                                            <div id="carouselExample"
+                                                class="carousel slide ">
+                                                <h3 class="block-title">Check
+                                                    out the recently found items
+                                                    in the list below.</h3>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item
+                                                        active">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4">
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-sm-4">
+                                                                <div
+                                                                    class="card--block">
+                                                                    <div
+                                                                        class="img
+                                                                        text-center">
+                                                                        <img
+                                                                            class=""
+                                                                            src="../img/section10/card--bann.png">
+                                                                    </div>
+                                                                    <div
+                                                                        class="__content">
+                                                                        <h3
+                                                                            class="title">Thank
+                                                                            you
+                                                                            Jackson
+                                                                            for
+                                                                            this
+                                                                            find!</h3>
+                                                                        <p
+                                                                            class="__para">
+                                                                            16
+                                                                            mm
+                                                                            Metric
+                                                                            Socket
+                                                                            <br>
+                                                                            Found
+                                                                            in
+                                                                            the
+                                                                            gent’s
+                                                                            locker
+                                                                        </p>
+                                                                        <div
+                                                                            class="__bottom">
+                                                                            <div
+                                                                                class="__action
+                                                                                w-100">
+                                                                                <span
+                                                                                    class="_1">
+                                                                                    <small>
+                                                                                        19K</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png">
+                                                                                </span>
+                                                                                |
+                                                                                <span
+                                                                                    class="_2">
+                                                                                    <small>
+                                                                                        0</small>
+                                                                                    <img
+                                                                                        src="../img/section10/hand-yes.png"></span>
+                                                                            </div>
+                                                                            <span
+                                                                                class="love--img">
+                                                                                <img
+                                                                                    src="../img/section10/love.png"
+                                                                                    alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="carousel-control-prev"
+                                                    type="button"
+                                                    data-bs-target="#carouselExample"
+                                                    data-bs-slide="prev">
+                                                    <span
+                                                        class="_icon
+                                                        carousel-control-prev-icon"
+                                                        aria-hidden="true"></span>
+                                                    <span
+                                                        class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button
+                                                    class="carousel-control-next"
+                                                    type="button"
+                                                    data-bs-target="#carouselExample"
+                                                    data-bs-slide="next">
+                                                    <span class="_icon
+                                                        carousel-control-next-icon"
+                                                        aria-hidden="true"></span>
+                                                    <span
+                                                        class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END SINGLE SELECTION -->
+
+                                    <!-- MULTIPLE SECLECTION -->
+                                    <div class="tab-pane fade" id="nav-profile"
+                                        role="tabpanel"
+                                        aria-labelledby="nav-profile-tab"
+                                        tabindex="0">
+
+                                    </div>
+                                    <!--End MULTIPLE SECLECTION -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="row">
+                <div class="col-md-12" id="footer">
+                    <p class="footer-text">© TOOL CART-2022</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="../fichiers/style.js"></script>
+        <script src="../fichiers/popper.min.js"></script>
+        <script src="../fichiers/bootstrap.min.js"></script>
+        <script src="../fichiers/js/uikit.min.js"></script>
+    </body>
+
+</html>

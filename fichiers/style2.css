@@ -635,6 +635,20 @@ a.got--question {
     color: rgba(52, 51, 49, 0.7);
 }
 
+.faq--section .block--faq {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.faq--section .block--faq .title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(52, 51, 49, 0.7);
+}
+
 .faq--section .description {
     font-family: 'Inter';
     font-style: normal;
@@ -642,6 +656,7 @@ a.got--question {
     font-size: 14px;
     line-height: 17px;
     color: rgba(52, 51, 49, 0.7);
+    margin-bottom: 30px;
 }
 
 #faq--accordion .accordion-body {
@@ -669,13 +684,17 @@ a.got--question {
 }
 
 
+.faq--section .faq--buttons.return {
+    justify-content: start !important;
+    margin-top: 20px;
+}
+
 .faq--section .faq--buttons {
     display: flex;
     margin: top 20px;
     padding-bottom: 20px;
-    justify-content: end !important;
+    justify-content: end;
     border-bottom: 1px solid rgba(42, 127, 184, 0.45);
-    ;
 }
 
 .faq--section .faq--buttons .btn1 {
@@ -734,10 +753,25 @@ a.got--question {
     color: rgba(42, 127, 184, 0.7);
 }
 
-.faq--section .faq--column2 {
+.faq--section {
     background-image: url(../img/section3/faq-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: contain;
+}
+
+.faq--section .faq--column2 .dropdown-menu {
+    background-color: #F1F1EB;
+    padding: 10px;
+    margin-top: 20px!important;
+}
+
+.faq--section .faq--column2 .dropdown-menu li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-block: 5px;
+    color: rgba(52, 51, 49, 0.7) !important;
 }
 
 .faq--section .faq--column2 .links {
@@ -760,6 +794,12 @@ a.got--question {
     margin-top: 50px;
     max-width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 760px) {
+    .faq--section .block--faq._2 {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 758px) {
@@ -786,7 +826,8 @@ a.got--question {
     margin-bottom: 20px;
 }
 
-.faq--section .formulaire input, .faq--section .formulaire textarea {
+.faq--section .formulaire input,
+.faq--section .formulaire textarea {
     margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);

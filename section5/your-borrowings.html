@@ -37,13 +37,14 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling"
                 aria-controls="offcanvasScrolling"></span>
-              <button class="navbar-toggler" type="button"
+              <span class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </span>
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -316,10 +317,30 @@
               <span class="links">
                 <a href="" class=""> <img src="../img/section4/all--tool.png"
                     class="img-fluid"
-                    alt="" srcset=""> All Tools</a> | <a href="" class=""> <img
+                    alt="" srcset=""> All Tools</a>
+                |
+                <!-- <a href="" class=""> <img
                     class="img-fluid"
                     src="../img/section4/custom--list.png" alt="" srcset="">
-                  Create A Custom List</a>
+                  Create A Custom List</a> -->
+                <!-- Example single danger button -->
+                <span class="btn-group">
+                  <a href="" class="dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false"> <img
+                      class="img-fluid"
+                      src="../img/section4/custom--list.png" alt="">
+                    Last two weeks</a>
+                  <!-- <button type="button" class="btn btn-danger dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Action
+                  </button> -->
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-center" href="#">RETURN
+                        THIS ITEM</a></li>
+                    <li><a class="dropdown-item text-center" href="#">RETURN
+                        THIS ITEM</a></li>
+                  </ul>
+                </span>
               </span>
             </div>
 
@@ -350,7 +371,8 @@
 
             <div class="tab-content my-3 px-0 mx-0" id="nav-tabContent">
               <!--ALL BORROWINGS -->
-              <div class="tab-pane tab-pane-borrowings fade show active"
+              <div class="tab-pane tab-pane-borrowings fade show active px-0
+                mx-0"
                 id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
                 tabindex="0">
                 <div class="row borrowing--block">

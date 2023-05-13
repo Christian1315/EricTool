@@ -9,7 +9,7 @@
     margin-top: 50px;
 }
 
-.section5  .borrowing--header {
+.section5 .borrowing--header {
     border-radius: 10px 10px 0px 0px !important;
     background: rgba(235, 235, 228, 0.3);
     display: flex;
@@ -19,17 +19,60 @@
     border: 1px solid #EBEBE4;
 }
 
+.section5 #rental--more--display ._header--left {
+    display: flex;
+}
+
+.section5 .borrowing--header.displayed {
+    border-radius: 10px 10px 0px 0px !important;
+    background: rgba(235, 235, 228, 0.3);
+    display: flex;
+    align-items: center;
+    color: #2A7FB8;
+    padding: 15px;
+    border: 1px solid #EBEBE4;
+    justify-content: space-between;
+}
+
+.section5 .borrowing--header .header--left {
+    display: flex;
+}
+
+.section5 .borrowing--header .go--back {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: end;
+    text-decoration: none;
+    color: rgba(52, 51, 49, 0.7);
+    border-bottom: 2px solid rgba(52, 51, 49, 0.7);
+}
 
 .section5 .header--col {
+    border-right: 2px solid #2A7FB8;
+}
+
+.section5 .header--col,
+.section5 #rental--more--display ._header--left ._col {
     margin-right: 20px;
     align-items: center;
     text-align: center;
-
     padding-left: 10px;
     padding-right: 10px;
-    /* border-left: 2px solid #2A7FB8; */
-    border-right: 2px solid #2A7FB8;
 }
+
+.section5 #rental--more--display ._header--left {
+    padding-top: 10px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(52, 51, 49, 0.1);
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 .section5 .header--col .title {
     font-weight: 500;
@@ -39,7 +82,16 @@
     color: #2A7FB8;
 }
 
-.section5 .header--col .content {
+.section5 #rental--more--display ._header--left .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #343331;
+}
+
+.section5 .header--col .content,
+.section5 #rental--more--display ._header--left .content {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -63,6 +115,12 @@
     width: 82px;
     height: 86px;
     text-align: center !important;
+}
+
+.section5 .borrow--list .list--content {
+    /* background-color: #343331; */
+    width: 70%;
+    padding-left: 10px;
 }
 
 .section5 .borrow--list .list--content .title {
@@ -92,6 +150,18 @@
     text-align: end;
 }
 
+.section5 .borrow--list .list--action .show--less {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    display: block;
+    text-align: end;
+    color: rgba(42, 127, 184, 0.7);
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 .section5 .borrow--list .list--action .Overdue {
     color: #E74A43;
 }
@@ -109,8 +179,8 @@
     color: #2A7FB8;
     border: 1px solid rgba(42, 127, 184, 0.7);
     border-radius: 10px;
-    background-color: transparent!important;
-    padding: 5px 30px!important;
+    background-color: transparent !important;
+    padding: 5px 30px !important;
 }
 
 .section5 .borrow--list .list--action button {
@@ -153,14 +223,15 @@
         border-right: none;
     }
 
-    .section5 .borrowing--header {
+    .section5 .borrowing--header,
+    .section5 .borrowing--header .header--left {
         display: list-item;
         list-style-type: none;
     }
-    
+
 }
 
-@media screen and (max-width:280px){
+@media screen and (max-width:280px) {
     #section4 {
         padding: 10px;
     }
