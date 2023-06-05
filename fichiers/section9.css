@@ -482,3 +482,14 @@
         list-style-type: none;
     }
 }
+
+.section9 .body--content #carouselExampleControls .carousel-inner{
+    background-color:rgba(42, 127, 184, 0.14);
+    padding: 30px;
+}
+
+
+.section9 .body--content #carouselExampleControls .paginate{
+    background-color: #fff;
+    color: #000;
+}
